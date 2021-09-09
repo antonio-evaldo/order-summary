@@ -10,6 +10,7 @@
   --light-graphite: #717FA6;
   --lighter-graphite: #F7F9FF;
   --strong-blue: #382AE1;
+  --purple: #766CF1;
   --white: #FFF;
 }
 
@@ -114,6 +115,12 @@ body {
   font-size: 0.8125rem;
   font-weight: 700;
   color: var(--strong-blue);
+
+  transition: color 0.2s;
+}
+
+.plan-container a:hover {
+  color: var(--purple);
 }
 
 .confirm {
@@ -127,6 +134,13 @@ body {
   border-radius: 11px;
   background-color: var(--strong-blue);
   color: var(--white);
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.confirm:hover {
+  background-color: var(--purple);
 }
 
 .cancel {
@@ -134,6 +148,13 @@ body {
   font-size: 0.9375rem;
   font-weight: 900;
   color: var(--light-graphite);
+  cursor: pointer;
+
+  transition: color 0.2s;
+}
+
+.cancel:hover {
+  color: var(--dark-graphite);
 }
 
 @media (min-width: 520px) {
