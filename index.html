@@ -9,6 +9,10 @@
 
   <title>Order Summary</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -18,30 +22,32 @@
   <div class="modal">
     <img src="./images/illustration-hero.svg" alt="Desenho de pessoa dançando e ouvindo música">
 
-    <h1>Order Summary</h1>
+    <div class="modal-content">
+      <h1>Order Summary</h1>
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-    <div class="plan-container">
-      <img src="./images/icon-music.svg" alt="Ícone musical">
+      <div class="plan-container">
+        <div class="plan">
+          <img src="./images/icon-music.svg" alt="Ícone musical">
+        
+          <div class="details">
+            <h3>Annual Plan</h3>
 
-      <div class="plan">
-        <div class="details">
-          <h3>Annual Plan</h3>
-
-          <span>$59.99/year</span>
+            <span>$59.99/year</span>
+          </div>
         </div>
-
-        <span>Change</span>
+        
+        <a href="#">Change</a>
       </div>
+
+      <button class="confirm">Proceed to Payment</button>
+
+      <span class="cancel">Cancel Order</span>
     </div>
 
-    <button class="confirm">Proceed to Payment</button>
-
-    <button class="cancel">Cancel Order</button>
-
   </div>
-  
+
 </body>
 
 </html>
