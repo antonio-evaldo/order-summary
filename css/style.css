@@ -57,6 +57,7 @@ body {
 .modal-content > h1 {
   font-size: 1.375rem;
   font-weight: 900;
+  line-height: 29px;
   color: var(--dark-graphite);
 }
 
@@ -96,12 +97,16 @@ body {
 .details h3 {
   font-size: 0.875rem;
   font-weight: 900;
+  line-height: 19px;
   color: var(--dark-graphite);
 }
 
 .details span {
+  display: block;
   font-size: 0.875rem;
   font-weight: 500;
+  line-height: 19px;
+  margin-top: 3px;
   color: var(--light-graphite);
 }
 
@@ -131,4 +136,54 @@ body {
   color: var(--light-graphite);
 }
 
-/* @media (min-width: ) */
+@media (min-width: 520px) {
+  .modal-content {  
+    padding: 2.8125rem 3rem 3rem;
+  }
+
+  .modal-content > h1 {
+    font-size: 1.75rem;
+    line-height: 37px;
+  }
+
+  .modal-content > p {
+    margin-top: 1rem;
+    color: var(--light-graphite);
+  
+    font-size: 1rem;
+    line-height: 1.625rem;
+    max-width: 355px;
+  }
+
+  .plan-container {
+    margin-top: 1.25rem;
+    padding: 1.5rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .details h3 {
+    font-size: 1rem;
+    line-height: 21px;
+  }
+
+  .details span {
+    font-size: 1rem;
+    line-height: 21px;
+    margin-top: 6px;
+  }
+
+  .plan-container a {
+    font-size: 0.875rem;
+  }
+
+  .confirm {
+    margin-top: 2rem;
+  }
+
+  .cancel {
+    margin-top: 2rem;
+  }
+}
