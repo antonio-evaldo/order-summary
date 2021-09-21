@@ -24,9 +24,12 @@ body {
   align-items: center;
 
   min-height: 100vh;
+  
+  background-image: url("../images/pattern-background-mobile.svg");
   background-color: var(--medium-graphite);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-
 
 .modal {
   width: 87%;
@@ -158,6 +161,10 @@ body {
 }
 
 @media (min-width: 520px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+
   .modal-content {  
     padding: 2.8125rem 3rem 3rem;
   }
